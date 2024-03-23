@@ -3,7 +3,14 @@ import java.util.Random; // Allows to get a random generated number
 import java.util.Scanner; // Allows to get user input
 import java.util.ArrayList; // Allows to get an array with all of the user guesses
 
-public class GuessTheNumberGame {
+// Define the game interface
+interface Game {
+    public void startGame();
+    public boolean checkNumber(int guessNumber);
+}
+
+// Implement the Game interface in GuessTheNumberGame class
+public class GuessTheNumberGame implements Game {
     // Declare private variables to store the random number, the number of attempts and an array with all of the user guesses
     private int random;
     private int attempts = 10;
@@ -38,11 +45,11 @@ public class GuessTheNumberGame {
         if (attempts == 0) {
             System.out.println("You ran out of attempts. The correct number was " + random);
         }
-        System.out.println("Guess History: " + guesses);
+        System.out.println("Guess History: " + guesses); // Shiws the hsitory of user guesses.
     }
-
+   
     // Compare the user guessed number with the generated random number, and provide feedback to the user based on that.
-    private boolean checkNumber(int guessNumber) {
+    public boolean checkNumber(int guessNumber) {
         if (guessNumber == random) {
             System.out.println("That's the correct number, congratulations!");
             return true; // Returns true if the guessed number matches the random number
