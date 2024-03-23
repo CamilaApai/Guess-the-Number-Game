@@ -31,5 +31,5 @@ Libraries:
 # Future Work
 
 - Create a graphic user interface.
-- Provide the user with the option to play again.
 - Incorporate error handling for times when the user enters an invalid value.
+- Provide the user with different range options within which to guess.
