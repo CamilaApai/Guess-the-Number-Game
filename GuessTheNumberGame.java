@@ -21,7 +21,7 @@ public class GuessTheNumberGame implements Game {
 
     public GuessTheNumberGame() {
         Random randomNumber = new Random(); // An instance of the Random class is created.
-        random = randomNumber.nextInt(100) + 1; // Generates a random integer between 0 and 100
+        random = randomNumber.nextInt(100) + 1; // Generates a random integer between 1 and 100
         userInput = new Scanner(System.in); // Initialize Scanner
     }
 
