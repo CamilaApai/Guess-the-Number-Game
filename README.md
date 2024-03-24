@@ -4,7 +4,7 @@ This project aims to develop a simple guessing game where the user attempts to g
 
 The primary goal is to provide an interactive experience for the user, allowing them to engage in the challenge of guessing a number between 1 and 100. The software provides feedback to the user after each guess, indicating whether the guessed number is higher or lower than the target number. 
 
-[Software Demo Video]()
+[Software Demo Video](https://youtu.be/vuds5kA__JA)
 
 # Development Environment
 
